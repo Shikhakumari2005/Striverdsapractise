@@ -40,6 +40,7 @@ class Solution {
         root.R=b;
      //Node root=new Node(2);
         Node c=new Node(6);
+        
         Node d=new Node(7);
         a.L=c;
         b.R=d;
