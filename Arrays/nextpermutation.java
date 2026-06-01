@@ -1,10 +1,8 @@
 
-
-Copy code
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class NextPermutation {
+public class nextpermutation {
 
     // Method to compute the next permutation in-place
     public static boolean nextPermutation(int[] nums) {
@@ -78,24 +76,24 @@ public class NextPermutation {
         }
     }
 }
-How It Works
-Find pivot: Scan from right to left to find the first index i where nums[i] < nums[i+1].
-Find successor: From the right, find the first number greater than nums[i] and swap them.
-Reverse suffix: Reverse the subarray from i+1 to the end to get the smallest possible order after the pivot.
-Example Run
+// How It Works
+// Find pivot: Scan from right to left to find the first index i where nums[i] < nums[i+1].
+// Find successor: From the right, find the first number greater than nums[i] and swap them.
+// Reverse suffix: Reverse the subarray from i+1 to the end to get the smallest possible order after the pivot.
+// Example Run
 
-Copy code
-Enter number of elements: 3
-Enter 3 integers:
-1 2 3
-Next permutation: [1, 3, 2]
+// Copy code
+// Enter number of elements: 3
+// Enter 3 integers:
+// 1 2 3
+// Next permutation: [1, 3, 2]
 
-Copy code
-Enter number of elements: 3
-Enter 3 integers:
-3 2 1
-No next permutation (array was in descending order).
-Smallest permutation: [1, 2, 3]
-If you want, I can also give you a version that works directly on strings for generating the next permutation of characters.
-Do you want me to prepare that?
+// Copy code
+// Enter number of elements: 3
+// Enter 3 integers:
+// 3 2 1
+// No next permutation (array was in descending order).
+// Smallest permutation: [1, 2, 3]
+// If you want, I can also give you a version that works directly on strings for generating the next permutation of characters.
+// Do you want me to prepare that?
 

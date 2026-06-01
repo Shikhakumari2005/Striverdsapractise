@@ -1,4 +1,4 @@
-public class MinMaxInArray {
+public class maxmin {
     public static void main(String[] args) {
         int[] arr = {23, 92, 56, 39, 93, 10};
         
