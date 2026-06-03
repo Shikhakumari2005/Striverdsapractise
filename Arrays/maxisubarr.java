@@ -9,14 +9,15 @@ public class maxisubarr {
              sum=0;
             }
         }
-        System.out.println(max);
+        //System.out.println(max);
         return max;
 
     }
     public static void main(String[] args){
         int[] nums= {5,4,-1,7,8};
         maxisubarr obj = new maxisubarr();  // Create object
-        obj.maxSubArray(nums); 
-        //System.out.println(Arrays.toString(obj));
+        System.out.println(obj.maxSubArray(nums)); 
+       // System.out.println(Arrays.toString(obj));
+        
     }
 }
