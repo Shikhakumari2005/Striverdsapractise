@@ -1,29 +1,33 @@
-class Node{
-    int val;
-    Node r;
-    Node l;
+// class TreeNode{
+//     int val;
+//     TreeNode r;
+//     TreeNode l;
 
-    public Node(int val){
-        this.val=val;
-        this.r=null;
-        this.l=null;
-    }
-}
+//     public  TreeNode(int val){
+//         this.val=val;
+//         this.r=null;
+//         this.l=null;
+//     }
+// }
 
-public class height {
-    public static int Height(Node root){
-        if(root==null){
-            return 0;
-        }else{
-            return 1 +Math.max(root.r ,root.l);
-        }
+// class height {
+//     public static int Height(TreeNode root){
+//         if(root==null){
+//             return 0;
+//         }
+//         // int left = Height(root.l);
+//         // int right = Height(root.r);
+//         return 1 +Math.max(Height(root.r) ,Height(root.l));
+//     }
 
-    }
-    public static void main(String[] args) {
-        Node root =new Node(1);
-        Node a =new Node(2);
-        Node b =new Node(3);
-        Node c  =new Node(1);
+//     public static void main(String[] args) {
+//         TreeNode root =new TreeNode(1);
+//         root.l = new TreeNode(2);
+//         root.r = new TreeNode(3);
+//         root.l.l = new TreeNode(4);
 
-    }
-}
+//         //height sol = new height();
+
+//         System.out.println(Height(root));
+//     }
+// }
