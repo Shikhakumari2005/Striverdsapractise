@@ -9,8 +9,7 @@ class TreeNode {
         this.val = val;
     }
 }
-
-public class Main {
+class averagelevel {
 
     public static List<Double> averageOfLevels(TreeNode root) {
         List<Double> ans = new ArrayList<>();
