@@ -12,6 +12,8 @@ class TreeNode{
 }
 
 class SubtreeSum {
+    static int maxSum = Integer.MIN_VALUE;
+
     public static int subtreesum(TreeNode root ,ArrayList<Integer> res){
         if(root==null){
             return 0;
@@ -19,10 +21,11 @@ class SubtreeSum {
         int l = subtreesum(root.left ,res);
         int r = subtreesum(root.right ,res);
         int sum=root.val + l + r;
-        //res.add(sum);
-       System.out.println(res.add(sum));
-        //System.out.println("Current list: " + res);
-        return  sum;
+        res.add(sum);
+       //System.out.println(res.add(sum));
+       System.out.println("Current list: " + res);
+       maxSum = Math.max(maxSum, sum);;
+       return maxSum;  
     }
 
     public static void main(String[] args) {
